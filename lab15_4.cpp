@@ -18,4 +18,19 @@ int main(){
 	return 0;
 }
 
+void shuffle(int &a,int &b,int &c,int &d){
+	int x[] = {a,b,c,d};
+	for(int i =0;i<4;i++)
+	{
+      int y =rand()%4;
+	  int z = x[i];
+	  x[i] = x[y];
+	  x[y] = z;
+	}
+	a = x[0];
+    b = x[1];
+    c = x[2];
+    d = x[3];
+
+}
 //Do not modify source code above this line
